@@ -108,7 +108,7 @@ public class PlaceOrderFormController {
 
 
                     try {
-                        CustomerDTO customerDTO = placeOrderDAO.searchCustomer(newValue + "");
+                        CustomerDTO customerDTO = customerDAO.searchCustomer(newValue + "");
                         if (!existCustomer(newValue + "")) {
 //                            "There is no such customer associated with the id " + id
                             new Alert(Alert.AlertType.ERROR, "There is no such customer associated with the id " + newValue + "").show();

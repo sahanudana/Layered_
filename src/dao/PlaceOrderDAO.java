@@ -8,7 +8,6 @@ import model.OrderDTO;
 import java.sql.*;
 
 public interface PlaceOrderDAO {
-    public CustomerDTO searchCustomer(String newValue) throws SQLException, ClassNotFoundException;
     public ItemDTO findItem(String newItemCode) throws SQLException, ClassNotFoundException;
     public String generateNewOrderId() throws SQLException, ClassNotFoundException;
 
